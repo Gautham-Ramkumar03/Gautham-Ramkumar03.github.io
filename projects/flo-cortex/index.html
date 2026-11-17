@@ -24,7 +24,9 @@ A demo robot can fail and be reset.
 A robot that works alone has to know where it is, know when it does not, and never guess in between.
 Flo Cortex is the software that does that, and one codebase runs every robot Flo ships: a new machine is a new configuration, not a new stack.</p>
 <h2 id="my-part-in-it">My part in it</h2>
-<p>I joined as an intern in November 2024 and have been full-time since May 2025.
+<p>When I joined as an intern in November 2024, the robots navigated on RTK GPS alone.
+Under the guidance of Manoj Karnekar, I built the stack’s first 3D LiDAR mapping and localization, so the robots could keep working where satellites could not reach.
+Since going full-time in May 2025 I have taken it further: mapping and localization rebuilt on factor graphs, GPS and LiDAR fused into one estimate, and a perception layer from LiDAR and cameras.
 Today I write most of the mapping, localization and control in the stack, and I lead its development: what gets built, in what order, and what is ready to go on a robot.</p>
 <p>The stack has five layers.
 Each one has its own page, in the order a robot meets them on a site.
