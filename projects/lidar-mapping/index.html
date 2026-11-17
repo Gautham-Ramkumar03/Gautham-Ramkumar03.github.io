@@ -5,7 +5,7 @@
           document.documentElement.classList.add('dark');
         }
       })();
-    </script><link rel="stylesheet" href="/_astro/BaseLayout.CyVHrE-Z.css"></head> <body class="min-h-screen flex flex-col"> <nav class="fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-md transition-colors"> <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <!-- Logo / Name --> <a href="/" class="font-heading text-xl font-bold text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors">
+    </script><link rel="stylesheet" href="/_astro/BaseLayout.DuuafvcS.css"></head> <body class="min-h-screen flex flex-col"> <nav class="fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-md transition-colors"> <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <!-- Logo / Name --> <a href="/" class="font-heading text-xl font-bold text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors">
 Gautham Ramkumar
 </a> <!-- Navigation Links --> <div class="flex items-center gap-6"> <a href="/projects" class="text-sm font-medium transition-colors text-[var(--color-gold)]">
 Projects
@@ -31,17 +31,13 @@ Joining sessions uses feature-based global registration and scan matching.
 It supports two families of LiDAR from one codebase.</p>
 <h2 id="how-i-know">How I know</h2>
 <ul>
-<li>Maps came out about 14 times denser than the old mapper’s.</li>
-<li>The fitness score localization reports against the map (a scan-matching score, lower is better, not a position error) fell from 0.7-1.2 to 0.006-0.04.</li>
+<li>The fitness score is what localization reports when it matches a scan against the map. It is a scan-matching score, not a position error, and the old maps gave 0.7-1.2 where the new ones give 0.006-0.04.</li>
 <li>The half-hour limit is gone.</li>
-<li>On one 2 km drive the old result had climbed about 15 m in height by the time the robot was back at its start. After the repair, reprocessing the same drive closes to 0.4 m.</li>
+<li>The height figure comes from reprocessing one 2 km drive with the repair.
+It is not finished: a stretch the robot drives only once can still carry a height error of several metres, and that is what the next step is for.</li>
 </ul>
-<p>That last one is not finished.
-A stretch the robot drives only once can still carry a height error of several metres, and that is what the next step is for.</p>
 <h2 id="next">Next</h2>
-<p>Planned, not done: satellite positioning inside the mapper itself, for long featureless stretches, and a map that updates as the site changes.</p> </div> <!-- Links -->  <!-- Media Gallery --> <section class="mt-12"><h2 class="text-2xl font-heading font-bold mb-6">Gallery</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><figure class> <video class="w-full rounded-lg" controls preload="none" poster="/media/projects/lidar-mapping/mapping_session.jpg" playsinline> <source src="/media/projects/lidar-mapping/mapping_session.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> <figcaption class="mt-2 text-sm text-[var(--color-muted)] text-center"> A mapping session building up on site </figcaption> </figure><figure class> <video class="w-full rounded-lg" controls preload="none" poster="/media/projects/lidar-navigation-stack/indoor_1.jpg" playsinline> <source src="/media/projects/lidar-navigation-stack/indoor_1.mp4" type="video/mp4">
+<p>Planned, not done: satellite positioning inside the mapper itself, for long featureless stretches, and a map that updates as the site changes.</p> </div> <!-- Links -->  <!-- Media Gallery --> <section class="mt-12"><h2 class="text-2xl font-heading font-bold mb-6">Gallery</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><figure class> <video class="w-full rounded-lg" controls preload="none" poster="/media/projects/lidar-navigation-stack/indoor_1.jpg" playsinline> <source src="/media/projects/lidar-navigation-stack/indoor_1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> <figcaption class="mt-2 text-sm text-[var(--color-muted)] text-center"> Where it started: the first LiDAR drives indoors </figcaption> </figure></div></section> <nav aria-label="Layers" class="mt-16 pt-8 border-t border-[var(--color-border)] grid grid-cols-1 sm:grid-cols-2 gap-4"> <a href="/projects/flo-cortex" class="group block p-5 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-gold)] transition-colors"> <span class="block text-xs font-semibold uppercase tracking-wider text-[var(--color-muted)] mb-1"> Back to </span> <span class="font-heading text-lg font-bold text-[var(--color-text)] group-hover:text-[var(--color-gold)] transition-colors">
 &larr; Flo Cortex </span> </a> <a href="/projects/localization" class="group block p-5 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-gold)] transition-colors sm:text-right"> <span class="block text-xs font-semibold uppercase tracking-wider text-[var(--color-muted)] mb-1"> Next - Layer 2 </span> <span class="font-heading text-lg font-bold text-[var(--color-text)] group-hover:text-[var(--color-gold)] transition-colors"> Localization &rarr;
